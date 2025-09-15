@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iBoxen Utvecklingsblogg</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h2>iBoxen</h2>
+                    </a>
+                </div>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="index.html#home" class="nav-link">Hem</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#about" class="nav-link">iBoxen</a>
+					</li>
+					<li class="nav-item">
+						<a href="index.html#members" class="nav-link">Om oss</a>
+					</li>
+					<li class="nav-item">
+						<a href="blog.html" class="nav-link active">Utveckling</a>
+					</li>
+				</ul>
+				<div class="nav-toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="blog-hero">
+			<div class="hero-container">
+				<div class="hero-content">
+					<h1>Utvecklingsblogg</h1>
+					<p>Följ vår resa vecka för vecka när vi bygger iBoxen!</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog-posts">
+			<div class="container" id="blog-container">
+				<!-- Blog posts will be loaded here by blog.js -->
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 iBoxen. A Student Project. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/blog.js"></script>
+</body>
+</html>

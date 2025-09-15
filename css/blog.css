@@ -1,0 +1,103 @@
+/* Blog-specific styles for iBoxen developer blog */
+
+.blog-hero {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    padding: 100px 0 60px;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 24px rgba(118, 75, 162, 0.08);
+}
+
+.blog-hero .hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.blog-hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+.blog-hero .hero-content p {
+    font-size: 1.3rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards 0.7s;
+}
+
+.blog-posts {
+    background: #f8f9fa;
+    padding: 60px 0 40px;
+}
+
+.blog-post-block {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(118, 75, 162, 0.10);
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 2rem 2rem 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-post-block:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 16px 40px rgba(118, 75, 162, 0.18);
+}
+
+.blog-post-header {
+    margin-bottom: 1.2rem;
+}
+
+.blog-post-week {
+    display: inline-block;
+    background: rgba(255,255,255,0.13);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.3em 1em;
+    border-radius: 999px;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.blog-post-header h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0.2rem 0 0.5rem 0;
+    color: #fff;
+}
+
+.blog-post-body p {
+    font-size: 1.15rem;
+    color: #f3eaff;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-hero .hero-content h1 {
+        font-size: 2.1rem;
+    }
+    .blog-post-block {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog-hero {
+        padding: 60px 0 30px;
+    }
+    .blog-post-block {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+}

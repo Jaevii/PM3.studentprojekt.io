@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>iBoxen - Studentprojekt</title>
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <header>
+       <nav class="navbar">
+           <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h2>iBoxen</h2>
+                    </a>
+                </div>
+               <ul class="nav-menu">
+                   <li class="nav-item">
+                       <a href="#home" class="nav-link">Hem</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#about" class="nav-link">iBoxen</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="#members" class="nav-link">Om oss</a>
+                   </li>
+                   <li class="nav-item">
+                       <a href="./blog.html" class="nav-link">Utveckling</a>
+                   </li>
+               </ul>
+               <div class="nav-toggle" id="mobile-menu">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+               </div>
+           </div>
+       </nav>
+   </header>
+
+   <main>
+       <section id="home" class="hero">
+           <div class="hero-container">
+               <div class="hero-content">
+                   <h1>Välkommen till iBoxen</h1>
+                   <p>En rikstäckande infrastruktur av leveransboxar i Sverige</p>
+                   <button class="cta-button" onclick="scrollToSection('about')">Läs mer</button>
+               </div>
+           </div>
+       </section>
+
+       <section id="about" class="about">
+           <div class="container">
+               <h2>Om iBoxen</h2>
+               <div class="about-content">
+                   <div class="about-text">
+                       <p>iBoxen is an innovative student project that demonstrates modern web development practices. Our platform showcases the power of HTML, CSS, and JavaScript working together to create engaging user experiences.</p>
+                       <p>This project represents our commitment to learning and applying cutting-edge web technologies in a practical, real-world context.</p>
+                   </div>
+                   <div class="about-features">
+                       <div class="feature">
+                           <h3>🚀 Modern Design</h3>
+                           <p>Clean, responsive interface that works on all devices</p>
+                       </div>
+                       <div class="feature">
+                           <h3>⚡ Fast Performance</h3>
+                           <p>Optimized for speed and efficiency</p>
+                       </div>
+                       <div class="feature">
+                           <h3>📱 Mobile First</h3>
+                           <p>Designed with mobile users in mind</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+       <section id="members" class="members">
+           <div class="container">
+               <h2>Vårt team</h2>
+               <div class="members-list">
+                   <!-- Member 1 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ludvig Järvi">
+                       </div>
+                       <div class="member-info">
+                           <h3>Ludvig Järvi</h3>
+                           <p class="member-title">Projektledare</p>
+                           <p class="member-email"><a href="mailto:ludvig@example.com">ludvig@example.com</a></p>
+                           <p class="member-about">Jag är ansvarig för projektledning och ser till att teamet arbetar mot våra gemensamma mål. Jag gillar problemlösning och att skapa struktur i projekt.</p>
+                       </div>
+                   </div>
+                   <!-- Member 2 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Anna Svensson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Anna Svensson</h3>
+                           <p class="member-title">Utvecklare</p>
+                           <p class="member-email"><a href="mailto:anna@example.com">anna@example.com</a></p>
+                           <p class="member-about">Jag ansvarar för frontend-utveckling och design. Jag brinner för användarupplevelse och att skapa snygga, responsiva gränssnitt.</p>
+                       </div>
+                   </div>
+                   <!-- Member 3 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                    <!-- Member 4 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                    <!-- Member 5 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                    <!-- Member 6 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                    <!-- Member 7 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                    <!-- Member 8 -->
+                   <div class="member-card left">
+                       <div class="member-img">
+                           <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Erik Karlsson">
+                       </div>
+                       <div class="member-info">
+                           <h3>Erik Karlsson</h3>
+                           <p class="member-title">Backend & Databas</p>
+                           <p class="member-email"><a href="mailto:erik@example.com">erik@example.com</a></p>
+                           <p class="member-about">Jag jobbar med backend och databaslösningar. Jag gillar att optimera prestanda och säkerställa att allt fungerar smidigt bakom kulisserna.</p>
+                       </div>
+                   </div>
+                   <!-- Add more members as needed -->
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <footer>
+       <div class="container">
+           <p>&copy; 2025 iBoxen. A Student Project. All rights reserved.</p>
+       </div>
+   </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
