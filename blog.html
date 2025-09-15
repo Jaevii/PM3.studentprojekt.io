@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/blog.css">
 </head>
-<body>
+<body style="min-height:100vh;display:flex;flex-direction:column;">
 	<header>
 		<nav class="navbar">
 			<div class="nav-container">
@@ -27,7 +27,7 @@
 						<a href="index.html#members" class="nav-link">Om oss</a>
 					</li>
 					<li class="nav-item">
-						<a href="blog.html" class="nav-link active">Utveckling</a>
+						<a href="blog.html" class="nav-link active">Utvecklingsblogg</a>
 					</li>
 				</ul>
 				<div class="nav-toggle" id="mobile-menu">
@@ -39,7 +39,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main style="flex:1 0 auto;">
 		<section class="blog-hero">
 			<div class="hero-container">
 				<div class="hero-content">
@@ -53,6 +53,11 @@
 			<div class="container" id="blog-container">
 				<!-- Blog posts will be loaded here by blog.js -->
 			</div>
+
+            <!-- Go to Bottom Button -->
+            <button id="go-bottom-btn" title="Gå till botten" style="display:none;">
+                ⬇️ Gå till botten
+            </button>
 		</section>
 	</main>
 

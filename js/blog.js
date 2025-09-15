@@ -46,3 +46,31 @@ async function loadPosts() {
 }
 
 loadPosts();
+
+// Go to Bottom Button Logic
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("go-bottom-btn");
+  function checkShowButton() {
+    // Show if page is scrollable (content taller than viewport)
+    if (document.body.scrollHeight > window.innerHeight + 20) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  }
+  checkShowButton();
+  window.addEventListener("resize", checkShowButton);
+  window.addEventListener("load", checkShowButton);
+  // In case posts load after DOMContentLoaded
+  setTimeout(checkShowButton, 500);
+
+  btn.addEventListener("click", function () {
+    // Scroll to the last blog post block if it exists
+    const posts = document.querySelectorAll('.blog-post-block');
+    if (posts.length > 0) {
+      posts[posts.length - 1].scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }
+  });
+});
