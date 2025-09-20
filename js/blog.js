@@ -1,6 +1,6 @@
 async function loadPosts() {
   // List of posts (add new JSON files here)
-  const postFiles = ["posts/post1.json"];
+  const postFiles = ["posts/post1.json", "posts/test.json"];
 
   const container = document.getElementById("blog-container");
 
@@ -50,9 +50,21 @@ async function loadPosts() {
         try {
           const response = await fetch(file);
           const fullPost = await response.json();
-          let paragraphs = fullPost.content.split(/\n\n+/);
+          // Support code blocks: replace triple backticks with <pre><code>
+          let formatted = fullPost.content
+            .replace(/```([\s\S]*?)```/g, function(match, code) {
+              // Escape HTML in code
+              const escaped = code.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+              return `<pre class="blog-code-block"><code>${escaped}</code></pre>`;
+            });
+          // Format paragraphs and line breaks
+          let paragraphs = formatted.split(/\n\n+/);
           let formattedContent = paragraphs
-            .map(paragraph => `<p>${paragraph.replace(/\n/g, '<br>')}</p>`)
+            .map(paragraph => {
+              // If it's a code block, don't wrap in <p>
+              if (paragraph.startsWith('<pre')) return paragraph;
+              return `<p>${paragraph.replace(/\n/g, '<br>')}</p>`;
+            })
             .join('<br>');
           showModal(fullPost.title, week, formattedContent);
         } catch (err) {

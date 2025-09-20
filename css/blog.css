@@ -1,3 +1,16 @@
+.blog-code-block {
+    background: #23272e;
+    color: #e6e6e6;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 1em 1.2em;
+    margin: 1.2em 0;
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(40,16,60,0.10);
+    line-height: 1.6;
+    word-break: break-word;
+}
 .blog-post-thumbnail {
     position: relative;
     min-height: 3.5em;
@@ -61,9 +74,9 @@
     color: #fff;
     border-radius: 18px;
     box-shadow: 0 16px 48px rgba(118, 75, 162, 0.22);
-    width: 50vw;
-    max-width: 900px;
-    min-width: 320px;
+    width: 70vw;
+    max-width: 1000px;
+    min-width: 400px;
     max-height: 80vh;
     padding: 2.5rem 2rem 2rem 2rem;
     overflow-y: auto;
