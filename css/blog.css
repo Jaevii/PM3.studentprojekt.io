@@ -180,6 +180,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
+    justify-content: flex-start;
 }
 /* Go to Bottom Button Styles */
 #go-bottom-btn {

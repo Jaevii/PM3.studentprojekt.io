@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/blog.css">
 </head>
-<body>
+<body style="min-height:100vh;display:flex;flex-direction:column;">
 	<header>
 		<nav class="navbar">
 			<div class="nav-container">
@@ -39,7 +39,7 @@
 		</nav>
 	</header>
 
-	<main style="flex:1 0 auto;">
+	<main style="flex:1 0 auto;display:flex;flex-direction:column;">
 		<section class="blog-hero">
 			<div class="hero-container">
 				<div class="hero-content">
@@ -50,15 +50,15 @@
 			</div>
 		</section>
 
-		<section class="blog-posts">
-			<div class="container" id="blog-container">
+		<section class="blog-posts" style="flex:1 0 auto;display:flex;flex-direction:column;justify-content:flex-start;">
+			<div class="container" id="blog-container" style="flex:1 0 auto;">
 				<!-- Blog posts will be loaded here by blog.js -->
 			</div>
 
-            <!-- Go to Bottom Button -->
-            <button id="go-bottom-btn" title="Gå till botten" style="display:none;">
-                ⬇️ Gå till botten
-            </button>
+			<!-- Go to Bottom Button -->
+			<button id="go-bottom-btn" title="Gå till botten" style="display:none;">
+				⬇️ Gå till botten
+			</button>
 		</section>
 	</main>
 
