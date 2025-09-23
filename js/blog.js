@@ -32,10 +32,10 @@ async function loadPosts() {
       let summaryText = post.summary || '';
       // More robust mobile detection
       let isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-      if (isMobile && summaryText.length > 120) {
+      if (isMobile && summaryText.length > 100) {
         // Find a reasonable cut-off at a sentence or word boundary
         let cutIdx = summaryText.indexOf('.', 80);
-        if (cutIdx === -1 || cutIdx > 180) cutIdx = 120;
+        if (cutIdx === -1 || cutIdx > 180) cutIdx = 80;
         summaryText = summaryText.slice(0, cutIdx) + '...';
       }
       let summaryParagraphs = summaryText.split(/\n\n+/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`);
