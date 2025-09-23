@@ -30,8 +30,8 @@ async function loadPosts() {
 
       // Use summary field for preview
       let summaryText = post.summary || '';
-      // Truncate summary for mobile devices
-      let isMobile = window.innerWidth <= 600;
+      // More robust mobile detection
+      let isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       if (isMobile && summaryText.length > 120) {
         // Find a reasonable cut-off at a sentence or word boundary
         let cutIdx = summaryText.indexOf('.', 80);
