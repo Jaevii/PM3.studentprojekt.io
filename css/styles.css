@@ -132,6 +132,8 @@ body {
    transition: all 0.3s ease;
    opacity: 0;
    animation: fadeInUp 1s ease forwards 0.9s;
+   text-decoration: none;
+   text-align: center;
 }
 
 .cta-button:hover {
@@ -161,7 +163,7 @@ body {
 }
 
 .about-text p {
-   font-size: 1.1rem;
+   font-size: 1rem;
    margin-bottom: 1.5rem;
    color: #1f1f1f;
 }
@@ -170,6 +172,13 @@ body {
    display: flex;
    flex-direction: column;
    gap: 1.5rem;
+}
+
+.about-btn-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2rem;
 }
 
 .feature {
