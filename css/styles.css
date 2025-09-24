@@ -181,6 +181,11 @@ body {
    margin-top: 2rem;
 }
 
+.about-btn-center a{
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
 .feature {
    background: white;
    padding: 1.5rem;
