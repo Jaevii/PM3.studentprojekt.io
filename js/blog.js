@@ -1,6 +1,6 @@
 async function loadPosts() {
   // List of posts (add new JSON files here)
-  const postFiles = ["posts/post1.json", "posts/post2.json", "posts/post3.json"];
+  const postFiles = ["posts/post1.json", "posts/post2.json", "posts/post3.json", "posts/post4.json", "posts/test.json"];
 
   const container = document.getElementById("blog-container");
 
